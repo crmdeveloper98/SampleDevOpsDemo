@@ -1,0 +1,32 @@
+﻿@model IList<PostViewModel>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<br />
+<div class="background-white">
+    <h2 class="text-info">Post List</h2>
+    <hr/>
+    <table class="table table-bordered">
+        <thead>
+            <tr class="table-primary">
+                <th>Post Id</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Author</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr class="table-info">
+                    <td>@item.PostId</td>
+                    <td>@item.Title</td>
+                    <td>@item.Description</td>
+                    <td>@item.Author</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
