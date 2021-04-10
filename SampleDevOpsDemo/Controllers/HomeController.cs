@@ -2,11 +2,7 @@
 using Microsoft.Extensions.Logging;
 using SampleDevOpsDemo.Models;
 using SampleDevOpsDemo.Repository;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace SampleDevOpsDemo.Controllers
 {
